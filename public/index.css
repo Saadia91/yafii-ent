@@ -1,0 +1,28 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	margin: 0px;
+	padding: 0px;
+}
+.colour {
+	--gray-light: rgb(244, 247, 247;);/* #f4f7f7 */
+	--gray-medium: rgb(232, 234, 234); /* #e8eaea */
+	--gray-dark: rgb(224, 224, 224);/* #e0e0e0 */
+	--mint-green: rgb(164, 249, 245);/* #a4f9f5 */
+	--black: rgb(0, 0, 0); /* #000 */
+	--white: rgb(255, 255, 255); /* #fff */
+}
+.background {
+	background: var(--gray-medium, #e8eaea);
+}
+
+
+
+
+
+
+
+
+
