@@ -1,3 +1,19 @@
+
+:root {
+	--red: rgb(244, 67, 54);
+	--light-red: rgba(244, 67, 54, 0.8);
+	--pink: rgb(173, 20, 87); 
+	--light-pink: rgba(173, 20, 87, 0.8);
+	--purple: rgb(156, 39, 176);
+	--light-purple: rgba(156, 39, 176, 0.8);
+	--dark-blue: rgb(63, 81, 181);
+	--dark-blue-light: rgba(63, 81, 181, 0.8); 
+	--light-blue: rgb(199, 219, 252);
+	--light-blue-light: rgba(199, 219, 252, 0.8);
+	--gray-back: rgb(241, 241, 241); /* #f1f1f1 */
+	--black: #161616;
+}
+
 * {
 	margin: 0px;
 	padding: 0px;
@@ -5,24 +21,231 @@
 body {
 	margin: 0px;
 	padding: 0px;
-}
-.colour {
-	--gray-light: rgb(244, 247, 247;);/* #f4f7f7 */
-	--gray-medium: rgb(232, 234, 234); /* #e8eaea */
-	--gray-dark: rgb(224, 224, 224);/* #e0e0e0 */
-	--mint-green: rgb(164, 249, 245);/* #a4f9f5 */
-	--black: rgb(0, 0, 0); /* #000 */
-	--white: rgb(255, 255, 255); /* #fff */
-}
-.background {
-	background: var(--gray-medium, #e8eaea);
+	font-family: 'Bai Jamjuree', sans-serif;
 }
 
+/*---------- SETUP END----------*/
+
+.navbar{
+	background: rgba(28, 35, 49, 0.7) !important;
+}
+.navbar-brand {
+	color: #fff !important;
+}
+.nav-link {
+	color: #fff !important;
+	margin-right: 10px;
+	letter-spacing: 2px;
+	font-size: 13px;
+}
+.navbar-toggler {
+   background-color: ;
+}
+.navbar:not(.top-nav-collapse) {
+   background: transparent !important;
+}
+
+/*---------- NAVBAR END----------*/
+
+.bg-img1 {
+	background-attachment: fixed;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover !important;
+	z-index: 0;
+}
+.bg-colour1 {
+	background: rgba(89, 105, 141, 0.7);
+	background: linear-gradient(45deg, rgba(244, 67, 54, 0.7), rgba(233, 30, 99, 0.7), rgba(156, 39, 176, 0.7),rgba(63, 81, 181, 0.7), rgba(3, 169, 244, 0.7));/*Standard syntax */  
+}
+.web-title {
+	margin-top: 200px;
+	font-family: 'K2D', sans-serif; 
+	font-size: 80px;
+	color: #000;
+}
+@media (max-width: 700px) {
+	.web-title {
+		font-size: 50px;
+	}
+}
+
+/*---------- TITLE SECTION END----------*/
+hr {
+	background-color: #d8d8d8;
+}
+.sect {
+	padding: 80px 0px;
+}
+.sect-title {
+	margin-bottom: 50px;
+}
+.place-text {
+	word-spacing: 2px;
+	margin-bottom: 50px;
+	line-height: 30px;
+}
+.responsive-sect {
+	margin-top: 100px;
+	font-size: 17px;
+	margin-bottom: 70px;
+}
+.list {
+	line-height: 38px;
+	padding: 0px 30px;
+}
+
+/*---------- SKILLS END ----------*/
+
+.project-outer {
+	background: #fff;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+.square-img {
+   width: 150px; 
+   height: 150px;
+   text-align: center;
+}
 
 
+.content {
+ 	position: relative;
+ 	margin-top: 20px;
+}
+
+.small-img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.overlay {
+	background-color: rgba(255, 255, 255, 0.9);
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+	width: 100%;
+	height:0;
+	transition: .3s ease;
+}
+
+.content:hover .overlay {
+  top: 0;
+  height: 100%;
+}
+
+.over-text {
+	color: #000;
+	font-size: 15px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+	font-weight: 200;
+}
+.overlay-title {
+	font-size: 20px;
+}
+.bord {
+   border: 2px solid #000 !important;
+   padding: 2px;
+}
+
+/*---------- PROJECTS END ----------*/
+.margin-gap {
+	margin: 50px 0px;
+}
+.card {
+	margin-top: 10px;
+	height: 500px;
+}
+.p-div {
+	height: 50%;
+}
+.c-div {
+	height: 40% !important;
+}
+.team-card {
+	padding: 15px 0px;
+}
+.p-div .card-img {
+	border: 3px solid #fff;
+	position: relative;
+	top: 50%;
+	bottom: 50%;
+}
+.card-text {
+	position: relative;
+}
+.social {
+	background-color: var(--blue);
+	border-radius: 50px !important;
+}
+/*---------- SOCIAL END ----------*/
+
+.contact {
+	margin-top: 80px;
+}
+.contact-left {
+}
+.contact-left_write {
+	letter-spacing: 1px;
+	line-height: 30px;
+}
+input[type=text], select {
+	width: 100%;
+	padding: 10px 20px;
+	margin: 3px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+.input-area {
+	margin-bottom: 20px;
+}
+textarea {
+	width: 100%;
+	height: 100px;
+	padding: 14px 15px;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	font-size: 16px;
+}
+button[type=submit] {
+	width: 100%;
+	background-color: #161616;
+	color: white;
+	padding: 10px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+}
+button[type=submit]:hover {
+	background-color: var(--blue);
+}
 
 
+/*---------- FOOTER START ----------*/
 
+.foot {
+	background: var(--gray-back);
+	color: #000;
+}
+.foot_data {
+	padding: 50px 10px;
+}
+.foot-bottom {
+	background: #000; 
+	text-align: center;
+	color: #fff;
+}
 
 
 
