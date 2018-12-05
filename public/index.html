@@ -12,10 +12,8 @@
       <script src="https://unpkg.com/jarallax@1.10/dist/jarallax.min.js"></script>
        <!-- Parallax -->
       <script src="https://unpkg.com/jarallax@1.10/dist/jarallax-element.min.js"></script>
-      <!-- Animate CSS -->
-      <link href="css/animate.css" rel="stylesheet">
       <!-- AOS CSS -->
-      <link href="css/aos.css" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.css" rel="stylesheet">
       <!--BOOTSTRAP-->
       <!-- Font Awesome -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -47,19 +45,19 @@
                 </form>
                 <ul class="navbar-nav ml-auto">
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Skills</a>
+                    <a class="nav-link" href="#about">About</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Projects</a>
+                    <a class="nav-link" href="#projects">Projects</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">The Team</a>
+                    <a class="nav-link" href="#the-team">The Team</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#contact">Contact</a>
                   </li>
                 </ul>
               </div>
@@ -68,27 +66,27 @@
           <!-- Navbar -->
 
           <div class="view bg-img1 jarallax" style="background-image: url(images/backg.jpg)" data-jarallax='{"speed": 0.5}'>
-          	<div class="mask bg-colour1 d-flex justify-content-center align-items-center">
+          	<div class="mask bg-colour1 d-flex justify-content-center align-items-center" id="home">
           		<div class="container">
           			<div class="row">
           				<div class="col-md-12">
-          					<h1 class="web-title mt-5">Yafii Enterprises</h1>
+          					<h1 class="web-title mt-4" data-aos="fade-up" data-aos-once="true" data-aos-offset="300" data-aos-easing="ease-in-sine">Yafii Enterprises</h1>
           				</div>
                   </div>
                   <div class="row">
                      <div class="col-md-10">
-                        <h5 class="mt-5 mb-5">
+                        <h5 class="mt-5 mb-4 intro-txt" data-aos="fade-up" data-aos-once="true" data-aos-duration="500" data-aos-easing="ease-in-sine">
                            Hi, we're Yafii Enterprises! We're a Full-Stack Web Development team based in London. We work hard to transform your ideas into reality.
                         </h5>
                      </div>
                   </div>
                   <div class="row">
                      <div class="col-md-7">
-                        <a href="#" class="btn btn-unique" title="">
-                           Get in Touch <i class="fa fa-arrow-circle-right"></i>
+                        <a href="#about" class="btn btn-elegant text-left" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-sine" title="">
+                           Find Out More About What We Do <i class="ml-2 fa fa-arrow-circle-down"></i>
                         </a>
-                        <a href="#" class="btn btn-elegant" title="">
-                           Find Out More About What We Do <i class="fa fa-arrow-circle-down"></i>
+                        <a href="#contact" class="btn btn-unique" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-sine"  title="view contact form">
+                           Get in Touch <i class="ml-2 fa fa-arrow-circle-right animate wow fadeInLeft infinite"></i>
                         </a>
                      </div>
                   </div>
@@ -103,37 +101,37 @@
 
          <div style="background-color: #fff;">
          	<div class="container">
-         		<div class="sect">
+         		<div class="sect" id="about">
          			<div class="row">
    	      			<div class="col-md-12">
-   	      				<h3 class="sect-title text-center font-weight-bold">Our Skills & What We Do</h3>
+   	      				<h3 class="sect-title text-center font-weight-bold" data-aos="fade-in" data-aos-once="true" data-aos-offset="300" data-aos-easing="ease-in-sine">Our Skills & What We Do</h3>
    	      			</div>
                   </div>
 
                   <div class="row mt-4 mb-4 font-weight-bold">
                      <div class="col-md-3">
-                        <div class="text-center">
+                        <div class="text-center" data-aos="fade-down" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-sine">
                            <img class="" src="images/skills/py.png" style="width: 45%">
                            <p class="pt-3">PYTHON</p>
                         </div>
                      </div>
 
                      <div class="col-md-3">
-                        <div class="text-center ">
+                        <div class="text-center" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-sine">
                            <img class="" src="images/skills/nodejs.png" style="width: 50%">
                            <p class="pt-3">NODE.JS</p>
                         </div>
                      </div>
 
                      <div class="col-md-3">
-                        <div class="text-center ">
+                        <div class="text-center" data-aos="fade-down" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-sine">
                            <img class="" src="images/skills/c++.png" style="width: 50%">
                            <p class="pt-3">C++</p>
                         </div>
                      </div>
 
                      <div class="col-md-3">
-                        <div class="text-center ">
+                        <div class="text-center" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-sine">
                            <img class="" src="images/skills/js.png" style="width: 42%">
                            <p class="pt-3">JAVASCRIPT</p>
                         </div>
@@ -142,7 +140,7 @@
 
 
                   <div class="row responsive-sect">
-                     <div class="col-md-7">
+                     <div class="col-md-7" data-aos="fade-in" data-aos-once="true" data-aos-duration="500" data-aos-easing="ease-in-sine">
                         <p class="place-text px-3">
                            We work hard to create stunning, dynamic, fully responsive websites and applications that work on a wide range of devices whilst providing an excellent user experience!
                         </p>
@@ -154,7 +152,7 @@
                         </ul>                   
                      </div>
                      <div class="col-md-5">
-                        <div>
+                        <div data-aos="fade-in" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-sine">
                            <img src="images/skills/responsive.png" style="width: 100%">
                         </div>
                      </div>
@@ -169,12 +167,12 @@
             <div class="container">
                <div class="row sect">
                   <div class="col-md-12 text-center">
-                     <h3 class="sect-title">Looking to hire?</h3>
-                     <h4 class="mb-5">
+                     <h3 class="sect-title" data-aos="fade-in" data-aos-once="true" data-aos-easing="ease-in-sine">Looking to hire?</h3>
+                     <h4 class="mb-5" data-aos="fade-in" data-aos-once="true" data-aos-duration="500" data-aos-easing="ease-in-sine">
                         An online presence is crucial for all business' in todays market. We work with you to create the perfect website for you needs.
                      </h4>
-                     <a href="#" class="btn btn-unique" title="">
-                        Get in Touch <i class="fa fa-arrow-circle-down"></i>
+                     <a href="#contact" class="btn btn-unique" data-aos="fade-in" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-sine" title="view contact form">
+                        Get in Touch <i class="ml-2 fa fa-arrow-circle-down animated fadeInDown slower infinite"></i>
                      </a>
                   </div>
                </div>
@@ -186,10 +184,10 @@
 
          <div style="background-color: var(--gray-back);">
             <div class="container">
-               <div class="sect">
+               <div class="sect" id="projects">
 
                   <div class="row">
-                     <div class="col-md-12">
+                     <div class="col-md-12" data-aos="fade-in" data-aos-once="true" data-aos-offset="300" data-aos-easing="ease-in-sine">
                         <h3 class="sect-title text-center font-weight-bold">Projects & Work Portfolio</h3>
                      </div>
                   </div>
@@ -197,7 +195,7 @@
                   <div class="row">
 
                      <div class="col-md-4 content">
-                        <div class="project-outer">
+                        <div class="project-outer" data-aos="zoom-in" data-aos-once="true" data-aos-duration="500" data-aos-offset="300">
                            <div class="proj-img view zoom">
                               <img  src="images/projects/samyii.png" class="fit img-fluid" alt="Project 3">
                               <a target="_blank" href="#">
@@ -213,7 +211,7 @@
                      </div>
 
                      <div class="col-md-4 content">
-                        <div class="project-outer">
+                        <div class="project-outer" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000" data-aos-offset="300">
                            <div class="proj-img view zoom">
                               <img  src="images/projects/nutrition.png" class="fit img-fluid" alt="Project 3">
                               <a target="_blank" href="https://nutridata.herokuapp.com/#!/">
@@ -229,7 +227,7 @@
                      </div>
 
                      <div class="col-md-4 content">
-                        <div class="project-outer">
+                        <div class="project-outer" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1500" data-aos-offset="300">
                            <div class="proj-img view zoom">
                               <img  src="images/projects/recipe.jpg" class="fit img-fluid" alt="Project 3">
                               <a target="_blank" href="https://great-food-big-bites.herokuapp.com/">
@@ -245,7 +243,7 @@
                      </div>
 
                      <div class="col-md-4 content">
-                        <div class="project-outer">
+                        <div class="project-outer" data-aos="zoom-in" data-aos-once="true" data-aos-duration="500" data-aos-offset="300">
                            <div class="proj-img view zoom">
                               <img  src="images/projects/scores.png" class="fit img-fluid" alt="Project 3">
                               <a target="_blank" href="http://top-leagues.herokuapp.com/#!/">
@@ -261,7 +259,7 @@
                      </div>
 
                      <div class="col-md-4 content">
-                        <div class="project-outer">
+                        <div class="project-outer" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000" data-aos-offset="300">
                            <div class="proj-img view zoom">
                               <img  src="images/projects/litblog.jpg" class="fit img-fluid" alt="Project 3">
                               <a target="_blank" href="https://her-written-word.herokuapp.com/">
@@ -277,7 +275,7 @@
                      </div>
 
                      <div class="col-md-4 content">
-                        <div class="project-outer">
+                        <div class="project-outer" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1500" data-aos-offset="300">
                            <div class="proj-img view zoom">
                               <img  src="images/projects/mdash.png" class="fit img-fluid" alt="Project 3">
                               <a target="_blank" href="http://myafii-sg-project-1.herokuapp.com/">
@@ -293,7 +291,7 @@
                      </div>
 
                      <div class="col-md-4 content">
-                        <div class="project-outer">
+                        <div class="project-outer" data-aos="zoom-in" data-aos-once="true" data-aos-duration="500" data-aos-offset="300">
                            <div class="proj-img view zoom">
                               <img  src="images/projects/tribute.jpg" class="fit img-fluid" alt="Project 3">
                               <a target="_blank" href="https://audrey-hepburn-tribute.herokuapp.com/">
@@ -318,11 +316,11 @@
             <div class="container">
                <div class="row sect">
                   <div class="col-md-12 text-center">
-                     <h3 class="sect-title">Embarking on a new project?</h3>
-                     <h4 class="mb-5">
+                     <h3 class="sect-title" data-aos="fade-in" data-aos-once="true" data-aos-easing="ease-in-sine">Embarking on a new project?</h3>
+                     <h4 class="mb-5" data-aos="fade-in" data-aos-once="true" data-aos-duration="500" data-aos-easing="ease-in-sine">
                         Would you like to collaborate with us? We'd love to hear from you!
                      </h4>
-                     <a href="#" class="btn btn-elegant" title="">
+                     <a href="#contact" class="btn btn-elegant" data-aos="fade-in" data-aos-once="true" data-aos-duration="1000" data-aos-easing="ease-in-sine" title="view contact form">
                         Get in Touch <i class="fa fa-arrow-circle-down"></i>
                      </a>
                   </div>
@@ -332,24 +330,24 @@
 
          <div>
             <div class="container">
-               <div class="sect">
+               <div class="sect" id="the-team">
                   <div class="row">
                      <div class="col-md-12">
-                        <h3 class="sect-title text-center font-weight-bold">Meet The Team</h3>
+                        <h3 class="sect-title text-center font-weight-bold" data-aos="fade-in" data-aos-once="true" data-aos-offset="300" data-aos-easing="ease-in-sine">Meet The Team</h3>
                      </div>
                   </div>
                   <div class="row margin-gap">
                      <div class="col-md-1"></div>
 
                      <div class="col-md-5">
-                        <div class="card">
+                        <div class="card animated wow bounceInUp">
                            <div class="p-div text-center mb-1">
                               <div class="bg-colour1 c-div">
                                  <img class="card-img rounded-circle" src="images/moh.jpg" style="width: 40%;">
                               </div>
                            </div>
                            <div class="card-text text-center">
-                              <h4>Mohamed Yafii</h4>
+                              <h4>Mohammed Yafii</h4>
                               <hr class="mx-4">
                               <h5>Senior Full-Stack Web Developer</h5>
                               <p>
@@ -365,7 +363,7 @@
                      </div>
 
                      <div class="col-md-5">
-                        <div class="card">
+                        <div class="card animated wow bounceInDown">
                            <div class="p-div text-center mb-1">
                               <div class="bg-colour1 c-div">
                                  <img class="card-img rounded-circle" src="images/samy.jpg" style="width: 40%;">
@@ -404,7 +402,7 @@
 
          <div class="container">
 
-               <div class="sect">
+               <div class="sect" id="contact">
 
                   <h3 class="sect-title text-center font-weight-bold">How can we help?</h3>
 
@@ -523,7 +521,7 @@
       <!-- MDB core JavaScript -->
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.0/js/mdb.min.js"></script>
       <!--AOS Animate-->
-      <script type="text/javascript" src="js/aos.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.js"></script>
       <script type="text/javascript">
          AOS.init();
 

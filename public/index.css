@@ -69,7 +69,11 @@ body {
 		font-size: 50px;
 	}
 }
-
+@media (max-height: 600px) {
+	.intro-txt {
+		font-size: 18px;
+	}
+}
 /*---------- TITLE SECTION END----------*/
 hr {
 	background-color: #d8d8d8;
