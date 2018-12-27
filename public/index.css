@@ -1,17 +1,14 @@
 
 :root {
-	--red: rgb(244, 67, 54);
-	--light-red: rgba(244, 67, 54, 0.8);
-	--pink: rgb(173, 20, 87); 
-	--light-pink: rgba(173, 20, 87, 0.8);
-	--purple: rgb(156, 39, 176);
-	--light-purple: rgba(156, 39, 176, 0.8);
-	--dark-blue: rgb(63, 81, 181);
-	--dark-blue-light: rgba(63, 81, 181, 0.8); 
-	--light-blue: rgb(199, 219, 252);
-	--light-blue-light: rgba(199, 219, 252, 0.8);
+	--blue: rgb(3, 169, 244); /*#03a9f4*/
+	--light-blue: rgb(199, 219, 252);/*#c7dbfc*/
 	--gray-back: rgb(241, 241, 241); /* #f1f1f1 */
-	--black: #161616;
+	--gray: #999999;
+	--dark-gray: rgb(34, 34, 34); /*#222222*/
+	--yellow: rgb(255, 236, 33);
+	--accent-one: rgb(252, 252, 0); /*#fcfc00*/
+	--logo: 'Anton', sans-serif;
+	--font-2: 'Khula', sans-serif;
 }
 
 * {
@@ -23,20 +20,42 @@ body {
 	padding: 0px;
 	font-family: 'Bai Jamjuree', sans-serif;
 }
+body, html {
+  height: 100%;
+}
+
+a {
+	color: ;
+}
+a:hover {
+	color: var(--accent-one) !important;
+}
+hr {
+	background: var(--gray-back);
+}
 
 /*---------- SETUP END----------*/
-
-.navbar{
-	background: rgba(28, 35, 49, 0.7) !important;
+header {
+	height: 90% !important;
 }
-.navbar-brand {
-	color: #fff !important;
+/*---------- NAVIGATION ----------*/
+.navbar{
+	background: rgba(224, 224, 224, 0.7) !important;
+}
+.navbar-brand{
+	color: var(--dark-gray) !important;
+	text-shadow: 3px 3px  #fff, -2px -2px var(--accent-one);
+	font-family: 'Anton', sans-serif;
+	text-transform: uppercase;
+	font-size: 23px;
+	letter-spacing: 1px;
 }
 .nav-link {
-	color: #fff !important;
+	color: var(--dark-gray) !important;
 	margin-right: 10px;
 	letter-spacing: 2px;
 	font-size: 13px;
+	font-weight: bold;
 }
 .navbar-toggler {
    background-color: ;
@@ -44,45 +63,95 @@ body {
 .navbar:not(.top-nav-collapse) {
    background: transparent !important;
 }
-
-/*---------- NAVBAR END----------*/
-
-.bg-img1 {
-	background-attachment: fixed;
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover !important;
-	z-index: 0;
+.nav-item {
+	margin: 0px 10px;
 }
-.bg-colour1 {
-	background: rgba(89, 105, 141, 0.7);
-	background: linear-gradient(45deg, rgba(244, 67, 54, 0.7), rgba(233, 30, 99, 0.7), rgba(156, 39, 176, 0.7),rgba(63, 81, 181, 0.7), rgba(3, 169, 244, 0.7));/*Standard syntax */  
+
+/*---------- HOME ----------*/
+.bg-overlay {
+	background: rgba(224, 224, 224, 0.8);
+}
+.bg {
+  background-image: url("images/mount.jpg");
+  height: 90%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.comp-name {
+	color: var(--accent-one);
 }
 .web-title {
-	margin-top: 200px;
-	font-family: 'K2D', sans-serif; 
-	font-size: 80px;
-	color: #000;
+	text-align: center;
+	color: var(--accent-one);
+	font-size: 4em;
+	font-family: 'Anton', sans-serif;
+	text-shadow: 1px 1px var(--dark-gray);
+	letter-spacing: 2px;
+	text-transform: uppercase;
 }
-@media (max-width: 700px) {
+@media (max-width: 500px) {
 	.web-title {
-		font-size: 50px;
+		font-size: 2em;
 	}
 }
-@media (max-height: 600px) {
-	.intro-txt {
-		font-size: 18px;
-	}
+.intro {
+	font-family: 'Poiret One', cursive;
+	font-family: var(--font-2);
+	text-transform: uppercase;
+	letter-spacing: 2px;
 }
-/*---------- TITLE SECTION END----------*/
-hr {
-	background-color: #d8d8d8;
+.btn-round {
+	border-top-right-radius: 40px;
+	border-bottom-right-radius: 40px;
+	border-top-left-radius: 40px;
+	border-bottom-left-radius: 40px;
+	font-weight: bold;
 }
+.btn-color_1 {
+	color: #fff;
+	background-color: var(--dark-gray);
+}
+
+/*---------- COLOUR BOX ----------*/
+
 .sect {
 	padding: 80px 0px;
 }
+
+.btn-color_2 {
+	color: var(--dark-gray) !important;
+	background-color: #fff;
+}
+
+/*-----------*/
+
+.color-bg {
+	background: var(--dark-gray);  
+	color: #fff;
+}
+.color-bg_title {
+	font-family: 'Anton', sans-serif;
+	text-transform: uppercase;
+}
+.color-bg_text {
+	font-family: var(--font-2);
+	text-transform: uppercase;
+}
 .sect-title {
-	margin-bottom: 50px;
+	font-family: var(--font-2);
+	font-size: 40px;
+	font-weight: 200;
+	margin-top: 20px;
+	margin-bottom: 80px;
+	text-transform: uppercase;
+}
+.pro-name {
+	color: var(--dark-gray);
+	font-family: 'Anton', sans-serif;
+	font-size: 20px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
 }
 .place-text {
 	word-spacing: 2px;
@@ -158,7 +227,7 @@ hr {
 	font-size: 20px;
 }
 .bord {
-   border: 2px solid #000 !important;
+   border: 3px solid rgb(255, 236, 33) !important;
    padding: 2px;
 }
 
@@ -170,16 +239,22 @@ hr {
 	margin-top: 10px;
 	height: 500px;
 }
-.p-div {
+.bg-colour1 {
+	background: linear-gradient(45deg, rgba(244, 67, 54, 0.7), rgba(233, 30, 99, 0.7), rgba(156, 39, 176, 0.7),rgba(63, 81, 181, 0.7), rgba(3, 169, 244, 0.7));/*Standard syntax */ 
+	background: rgb(255, 236, 33); 
+}
+.parent-rainbow_div {
 	height: 50%;
 }
-.c-div {
+.child-rainbow_div {
 	height: 40% !important;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
 }
 .team-card {
 	padding: 15px 0px;
 }
-.p-div .card-img {
+.parent-rainbow_div .card-img {
 	border: 3px solid #fff;
 	position: relative;
 	top: 50%;
@@ -188,8 +263,15 @@ hr {
 .card-text {
 	position: relative;
 }
+.card-text h4 {
+	font-family: var(--logo);
+}
+.card-text h5 {
+	font-family: var(--logo);
+	color: var(--gray, #999999);
+}
 .social {
-	background-color: var(--blue);
+	background-color: var(--dark-gray);
 	border-radius: 50px !important;
 }
 /*---------- SOCIAL END ----------*/
@@ -224,7 +306,7 @@ textarea {
 }
 button[type=submit] {
 	width: 100%;
-	background-color: #161616;
+	background-color: var(--dark-gray);
 	color: white;
 	padding: 10px 20px;
 	margin: 8px 0;
@@ -232,15 +314,19 @@ button[type=submit] {
 	cursor: pointer;
 }
 button[type=submit]:hover {
-	background-color: var(--blue);
+	background-color: var(--accent-one);
 }
 
 
 /*---------- FOOTER START ----------*/
 
 .foot {
-	background: var(--gray-back);
-	color: #000;
+	background: var(--gray-back );
+	color: var(--dark-gray);
+	font-size: 12px;
+	padding: 40px 0px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
 }
 .foot_data {
 	padding: 50px 10px;
@@ -248,7 +334,7 @@ button[type=submit]:hover {
 .foot-bottom {
 	background: #000; 
 	text-align: center;
-	color: #fff;
+	color: var(--dark-gray);
 }
 
 
