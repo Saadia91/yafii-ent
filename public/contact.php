@@ -1,10 +1,10 @@
 <?php
 
 if(isset($_POST['submit'])) {
-  $name = $_POST['name'];
-  $location = $_POST['location'];
-  $mailFrom = $_POST['email'];
-  $message = $_POST['query'];
+  $name = sanitize_input($_POST['name']);
+  $location = sanitize_input($_POST['location']);
+  $mailFrom = sanitize_input($_POST['email']);
+  $message = sanitize_input($_POST['query']);
 
   // TODO: Must add error handlers
 
@@ -13,7 +13,14 @@ if(isset($_POST['submit'])) {
   $text = "Name: ".$name."\nLocation: ".$location."\n\n".$message;
 
   mail($mailTo, "Yafii Enterprise Query", $text, $headers);
-  header("Location: index.html");
+  header("Location: index.php");
+}
+
+function sanitize_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
 }
 
  ?>
