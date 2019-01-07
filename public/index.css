@@ -28,9 +28,11 @@ a {
 	color: ;
 }
 a:hover {
+	color:  rgb(252, 252, 0) !important;
 	color: var(--accent-one) !important;
 }
 hr {
+	background:  rgb(241, 241, 241);
 	background: var(--gray-back);
 }
 
@@ -43,14 +45,18 @@ header {
 	background: rgba(224, 224, 224, 0.7) !important;
 }
 .navbar-brand{
+	color: rgb(34, 34, 34) !important;
 	color: var(--dark-gray) !important;
+	text-shadow: 3px 3px  #fff, -2px -2px  rgb(252, 252, 0);
 	text-shadow: 3px 3px  #fff, -2px -2px var(--accent-one);
 	font-family: 'Anton', sans-serif;
+	font-family: var(--logo);
 	text-transform: uppercase;
 	font-size: 23px;
 	letter-spacing: 1px;
 }
 .nav-link {
+	color: rgb(34, 34, 34) !important;
 	color: var(--dark-gray) !important;
 	margin-right: 10px;
 	letter-spacing: 2px;
@@ -78,14 +84,15 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.comp-name {
-	color: var(--accent-one);
-}
+
 .web-title {
 	text-align: center;
+	color:  rgb(252, 252, 0);
 	color: var(--accent-one);
 	font-size: 4em;
 	font-family: 'Anton', sans-serif;
+	font-family: var(--logo);
+	text-shadow: 1px 1px rgb(34, 34, 34);
 	text-shadow: 1px 1px var(--dark-gray);
 	letter-spacing: 2px;
 	text-transform: uppercase;
@@ -96,7 +103,7 @@ header {
 	}
 }
 .intro {
-	font-family: 'Poiret One', cursive;
+	font-family: 'Khula', sans-serif;
 	font-family: var(--font-2);
 	text-transform: uppercase;
 	letter-spacing: 2px;
@@ -110,6 +117,7 @@ header {
 }
 .btn-color_1 {
 	color: #fff;
+	background-color:  rgb(34, 34, 34);
 	background-color: var(--dark-gray);
 }
 
@@ -120,6 +128,7 @@ header {
 }
 
 .btn-color_2 {
+	color:  rgb(34, 34, 34) !important;
 	color: var(--dark-gray) !important;
 	background-color: #fff;
 }
@@ -127,18 +136,22 @@ header {
 /*-----------*/
 
 .color-bg {
+	background: rgb(34, 34, 34);
 	background: var(--dark-gray);  
 	color: #fff;
 }
 .color-bg_title {
 	font-family: 'Anton', sans-serif;
+	font-family: var(--logo);
 	text-transform: uppercase;
 }
 .color-bg_text {
+	font-family: 'Khula', sans-serif;
 	font-family: var(--font-2);
 	text-transform: uppercase;
 }
 .sect-title {
+	font-family: 'Anton', sans-serif;
 	font-family: var(--font-2);
 	font-size: 40px;
 	font-weight: 200;
@@ -147,8 +160,10 @@ header {
 	text-transform: uppercase;
 }
 .pro-name {
+	color:  rgb(34, 34, 34);
 	color: var(--dark-gray);
 	font-family: 'Anton', sans-serif;
+	font-family: var(--logo);
 	font-size: 20px;
 	letter-spacing: 2px;
 	text-transform: uppercase;
@@ -268,9 +283,11 @@ header {
 }
 .card-text h5 {
 	font-family: var(--logo);
+	color:  rgb(34, 34, 34);
 	color: var(--gray, #999999);
 }
 .social {
+	background-color:  rgb(34, 34, 34);
 	background-color: var(--dark-gray);
 	border-radius: 50px !important;
 }
@@ -306,6 +323,7 @@ textarea {
 }
 button[type=submit] {
 	width: 100%;
+	background-color:  rgb(34, 34, 34);
 	background-color: var(--dark-gray);
 	color: white;
 	padding: 10px 20px;
@@ -314,6 +332,7 @@ button[type=submit] {
 	cursor: pointer;
 }
 button[type=submit]:hover {
+	color:  rgb(252, 252, 0);
 	background-color: var(--accent-one);
 }
 
@@ -322,6 +341,7 @@ button[type=submit]:hover {
 
 .foot {
 	background: var(--gray-back );
+	color:  rgb(34, 34, 34);
 	color: var(--dark-gray);
 	font-size: 12px;
 	padding: 40px 0px;
@@ -334,6 +354,7 @@ button[type=submit]:hover {
 .foot-bottom {
 	background: #000; 
 	text-align: center;
+	color:  rgb(34, 34, 34);
 	color: var(--dark-gray);
 }
 
