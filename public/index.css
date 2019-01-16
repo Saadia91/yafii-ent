@@ -101,6 +101,9 @@ header {
 	.web-title {
 		font-size: 2em;
 	}
+	.intro {
+		font-size: 18px;
+	}
 }
 .intro {
 	font-family: 'Khula', sans-serif;
@@ -158,6 +161,11 @@ header {
 	margin-top: 20px;
 	margin-bottom: 80px;
 	text-transform: uppercase;
+}
+@media (max-width: 500px) {
+	.sect-title {
+		font-size: 35px;
+	}
 }
 .pro-name {
 	color:  rgb(34, 34, 34);
