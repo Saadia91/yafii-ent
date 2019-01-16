@@ -357,6 +357,10 @@ button[type=submit]:hover {
 	color:  rgb(34, 34, 34);
 	color: var(--dark-gray);
 }
+.foot a {
+	color:  rgb(34, 34, 34);
+	color: var(--dark-gray);
+}
 
 
 
